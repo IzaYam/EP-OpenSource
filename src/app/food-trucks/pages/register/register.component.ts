@@ -38,7 +38,7 @@ export class RegisterComponent implements OnInit {
   }
 
   getAllFoodTrucks(){
-    this.foodTrucksService.getAll().subscribe((response) => {
+    this.foodTrucksService.getAll().subscribe((response: any) => {
       this.dataSource.data = response;
     })
   }
